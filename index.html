@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .main {
+    width: 100%;
+    height: 100vh;
+    background-color: #F3ECE7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Parent Box */
+.parent {
+    width: 450px;
+    height: 500px;
+    border: 3px solid #7D7D7D; /* Dark gray */
+    background-color: #FFFFFF; /* White */
+    border-radius: 10px; /* Slightly rounded corners */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/* Page Title */
+.p-reg {
+    font-size: 30px;
+    font-weight: 600;
+    color: #333333; /* Dark gray */
+    letter-spacing: 1px;
+    margin-top: 20px;
+}
+
+/* Child Box */
+.parent2 {
+    width: 90%;
+    height: 87%;
+}
+
+/* Circle Container */
+.circle-parent {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    position: relative;
+}
+
+/* Circle Style */
+.circle1 {
+    width: 40px;
+    height: 40px;
+    background-color: #FF5A5F; /* Red */
+    border-radius: 50%;
+    color: #FFFFFF; /* White */
+    font-size: 23px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1111;
+}
+
+/* Progress Line Container */
+.line-parent {
+    width: 90%;
+    height: 8px;
+    background-color: #E8E8E8; /* Light gray */
+    position: absolute;
+    top: 45%;
+    left: 5%;
+}
+
+/* Progress Line */
+.line {
+    width: 0%;
+    height: 8px;
+    background-color: #00A699; /* Green */
+    position: absolute;
+    top: 45%;
+    left: 5%;
+}
+
+/* Background Change */
+.bgk {
+    background-color: #00A699; /* Green */
+}
+
+/* Paragraphs Container */
+.parent-p {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 2%;
+    margin-top: 10px;
+}
+
+/* Paragraph Style */
+.p1 {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/* Buttons Container */
+.btn-parent {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+}
+
+/* Button Style */
+.button1,
+.button2 {
+    width: 100px;
+    height: 40px;
+    background-color: #333333; /* Dark gray */
+    color: #FFFFFF; /* White */
+    outline: none;
+    border: none;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 5px;
+    transition: 0.3s;
+    cursor: pointer;
+    margin-left: 20%;
+}
+
+/* Button Hover Effect */
+.button1:hover,
+.button2:hover {
+    background-color: #FF5A5F; /* Red */
+    color: #FFFFFF; /* White */
+}
+.inp-parent {
+    width: 100%;
+    height: 230px;
+    position: relative;
+}
+
+.parent-js {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #FFFFFF;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+.op {
+    display: block;
+}
+
+/* User Paragraph Style */
+.p-user {
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 30px;
+}
+
+/* Input Style */
+.input1 {
+    width: 90%;
+    height: 45px;
+    outline: none;
+    border: 1px solid #CCCCCC; 
+    margin-top: 10px;
+    border-radius: 5px;
+    padding: 15px;
+    font-size: 20px;
+    font-weight: 400;
+    color: #333333; 
+}
+
+@media screen and (max-width:600px) {
+    .parent {
+        width: 90%;
+    }
+}
+
+
+
+
+    </style>
+</head>
+<body>
+
+    <header class="main">
+        <div class="parent">
+            <p class="p-reg">Registration Form</p>
+            <div class="parent2">
+                <div class="circle-parent">
+                    <div class="circle1 bgk">1</div>
+                    <div class="circle1">2</div>
+                    <div class="circle1">3</div>
+                    <div class="circle1">4</div>
+                    <div class="line-parent"></div>
+                    <div class="line"></div>
+                </div>
+                <div class="parent-p">
+                    <p class="p1">Intro</p>
+                    <p class="p1">Contact</p>
+                    <p class="p1">Id</p>
+                    <p class="p1">Password</p>
+                </div>
+                <div class="inp-parent">
+                    <div class="parent-js op">
+                        <p class="p-user">Username</p>
+                        <input class="input1" type="text" name="" id="">
+                        <p class="p-user">Position</p>
+                        <input class="input1" type="text" name="" id="">
+                    </div>
+                    <div class="parent-js">
+                        <p class="p-user">Phone</p>
+                        <input class="input1" type="text" name="" id="">
+                        <p class="p-user">Email</p>
+                        <input class="input1" type="text" name="" id="">
+                    </div>
+                    <div class="parent-js">
+                        <p class="p-user">Date of Birth</p>
+                        <input class="input1" type="datetime-local" name="" id="">
+                        <p class="p-user">National Id</p>
+                        <input class="input1" type="text" name="" id="">
+                    </div>
+                    <div class="parent-js">
+                        <p class="p-user">Password</p>
+                        <input class="input1" type="text" name="" id="">
+                        <p class="p-user">Confirm Password</p>
+                        <input class="input1" type="text" name="" id="">
+                    </div>
+                </div>
+                <div class="btn-parent">
+                    <button class="button1">Previous</button>
+                    <button class="button2">Next</button>
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+
+    <script src="./script.js">
+
+
+       
+
+
+    </script>
+
+
+
+
+
+
+    
+</body>
+</html>
